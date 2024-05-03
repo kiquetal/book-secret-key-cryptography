@@ -50,5 +50,8 @@ Block ciphers operates on blocks of characters in the message, say blocks of 5 c
 Usually all of the blocks are the same size, and the same key is used for every block.
 
 Stream ciphers operate on the message one character at a time, and the key is also a stream of characters.
+The block/stream classification is not exclusive.
+
+
 
   
