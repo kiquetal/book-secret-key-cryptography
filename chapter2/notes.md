@@ -19,3 +19,6 @@
 	Invisible message: such as microdots,or inivisible inks that become visible when heated or exposed to acid
 	Misdirection: where the signature or the shape and color of the paper are the true messages, and everything else is distraction or disinformation
 
+- Image
+
+![simple-image](../images/ch2-01.png)
