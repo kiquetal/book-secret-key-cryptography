@@ -22,3 +22,33 @@
 - Image
 
 ![simple-image](../images/ch2-01.png)
+
+Secret Key: Sandra has a secret key, which she uses to encipher messages.
+Riva has a corresponding secret key, which she uses to decipher those messages.
+This may be the same key or an inverse key. Usually Sandra controls the key. When Sandra
+changes the key, she must send the new key,or its inverse, to Riva. This is the standard
+paradigm of classical cryptography.
+
+Public Key: Riva has a public encryption key, which she makes known to everyone.
+Whenever Sandra wants to send Riva a message, she enciphers it using Riva's public key.
+Riva also has a secret decryption key, know only to herself. 
+
+Personal Key: Sandra and Riva each have personal key they share with nobodody, not even one another.
+Since no keys are ever transmitted or shared, Personal Key cryptography is sometimes called keyless
+cryptography. Here is how it works:
+Pass1: Sandra enciphers the message with her personal key and sends the enciphered message
+to Riva.
+Pass2: Riva enciphers that message with the personal key and sends this doubly enciphered message
+back to Sandra.
+Pass3: Sandra deciphers that message using her personal key and sends this back to Riva. 
+The message is now enciphered only with Riva key, which se uses to read the message.
+
+
+- Block ciphers vs stream ciphers
+
+Block ciphers operates on blocks of characters in the message, say blocks of 5 characters.
+Usually all of the blocks are the same size, and the same key is used for every block.
+
+Stream ciphers operate on the message one character at a time, and the key is also a stream of characters.
+
+  
